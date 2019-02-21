@@ -1,0 +1,229 @@
+header {
+  height: 80px;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  background-image: url("StarBackground2.jpg");
+  position: fixed;
+  z-index:10;
+  margin-top: 0;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.logo-box {
+  height: 100%;
+  width: 15%;
+  display: flex;
+  align-content: center;
+  justify-content: flex-end;
+  object-fit: cover;
+  margin-left: 5vw;
+}
+
+.logo-box a img{
+  margin-left: 30px;
+  height: 80px;
+  width: 200px;
+  position: relative;
+}
+
+.second-box {
+  height: 100%;
+  width: 55%;
+  margin-right: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.second-box ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%; 
+  padding: 0;
+  margin: 0;
+}
+
+.second-box ul li {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.second-box li a {
+  color: #a8a393;
+  padding: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+   -webkit-transition-duration: 0.2s; 
+  transition-duration: 0.2s;
+  font-size: 30px;
+  font-family: "Teko", sans-serif;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-box li a:hover {
+  color: #dbb52f;
+}
+
+.second-box ul li .active {
+  color: #dbb52f;
+}
+
+.DropDownContent {
+  display: none;
+  position: absolute;
+  height: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+.DropDownContent a {
+  color: #a8a393;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  background-color: black;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  font-family: "Teko", sans-serif;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 10;
+}
+
+.DropDownContent a:hover {
+  color: #dbb52f;
+}
+
+.show {
+  display: block;
+}
+
+.dropbtn {
+  height: 80px;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+.Dropdown button {
+  font-family: "Teko", sans-serif;
+  color: #a8a393;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: rgba(0,0,0,0);
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  font-weight: bold;
+}
+
+.Dropdown button:hover {
+  color: #dbb52f;
+}
+
+.Dropdown li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+} 
+
+a:link {
+  text-decoration: none;
+}
+
+body {
+  top: 70px;
+  padding: 0;
+  position: relative;
+  margin: 0;
+  z-index: 1;
+  background-color: black;
+}
+
+h1 {
+  color: white;
+  font-family: "Courier New", serif;
+  font-size: 72px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+h2 {
+  color: white;
+  font-family: "Courier New", serif;
+  font-size: 28px;
+}
+h3 {
+  color: white;
+  font-size: 16px;
+  display: inline;
+}
+p {
+  color: white;
+  font-family: "Courier New", serif;
+}
+
+footer {
+   height: 100px;
+   width: 100%;
+   background-color: black;
+   display:flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 0;
+}
+
+.footer p {
+  margin: 0px;
+  padding: 0px;
+  height: 70px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Courier new", sans-serif;
+  color: white;
+  font-size: 14px;
+}
+
+.footer img {
+  height: 100%;
+  margin: 0;
+}
+
+
+
+.container {
+  display: none;
+}
+
+.overlay {
+  display: none;
+}
+

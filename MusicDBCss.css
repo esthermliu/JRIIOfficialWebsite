@@ -1,0 +1,108 @@
+.MusicBiggestContainer {
+  background-image: url("AudioRoom.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.MusicContainer {
+  background-color:rgba(117, 119, 124, 0.8);
+  height: 100%;
+  width: 100%;
+}
+
+.MusicInfo {
+  padding-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 20%;
+  padding-bottom: 10vh;
+}
+
+.MusicInfo h1 {
+  text-shadow: 3px 3px 0px #c76037;
+  color:#dbb52f;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+
+.MusicAlbum img{
+  width: 100%;
+  height: 350px;
+}
+
+.MusicAlbum {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 3%;
+}
+
+
+.ActualMusicHolder {
+  height: inherit;
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+}
+
+#active {
+  color: #dbb52f;
+}
+
+.MusicAlbumInfo {
+  width: 50%;
+  margin-left: 2%;
+}
+
+.MusicAlbumInfo p {
+  font-size: 20px;
+}
+
+
+.AllButton button {
+  color: #dbb52f;
+  text-transform: uppercase;
+}
+
+.BuyMusic:hover button, .BuyMusic2:hover button{
+  border-color: white;
+ }
+ 
+ .BuyMusic:hover a button, .BuyMusic2:hover a button {
+   color: white;
+}
+.AllButton button {
+  background-color: rgba(255,255,255,0);
+  border: 2px solid #dbb52f;
+  z-index: 2;
+  padding: 15px 15px;
+  margin: 35px;
+  color: #dbb52f;
+    -webkit-transition-duration: 0.2s; 
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+.ButtonBuy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.MusicAlbumInfo h3 {
+  font-family: "Courier new", sans-serif;
+  text-transform: uppercase;
+}
+
+.MusicAlbumInfo h2 {
+  text-transform: uppercase;
+}
+
+.footer2 {
+  display: none;
+}
+

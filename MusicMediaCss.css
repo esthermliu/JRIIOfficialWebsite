@@ -1,0 +1,31 @@
+@media screen and (max-width: 414px) {
+.AboutHeader {
+  display: none !important;
+}
+
+.MusicBody {
+  top: 80px !important;
+}
+
+.SongContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.TopBar {
+  width: 100% !important;
+  margin: 0 !important;
+}
+
+.MusicContainer {
+  margin: 2vh !important;
+}
+
+.Box2 {
+  width: 45% !important;
+  text-align: center;
+}
+
+
+}

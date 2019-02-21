@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" media="screen and (max-width: 414px)" href="MediaCss.css">
+	<link rel="stylesheet" media="screen and (max-width: 414px)" href="TourMediaCss.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="TourDBCss.css">
+	<link rel="stylesheet" href="StyleSheetDB.css">
+	<link rel="shortcut icon" type="image/png" href="ActualFavicon.png"/>
+	<link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet"> 
+    <title>About JR II</title>
+</head>
+<header>
+  <div class="logo-box">
+    <a class="HomePage" href="HomepageDB.html"><img src="JuniorLogo.png"></a>
+  </div>
+  <div class="second-box">
+    <ul>      
+      <li><a href="HomePageDB.html">Home</a></li>
+	  <li><a class="active" href="TourDB.html">Tour</a></li>
+	  <li><a href="NewsDB.html">News</a></li>
+	  <div class="Dropdown">
+	    <li><button class="dropbtn" onclick="myFunction()">Music</button></li>
+		<div class="DropDownContent" id="MyDropdown">
+		 <a href="MusicAlbum1.html">JR II's Greatest Hits</a>
+		 <a href="MusicAlbum2.html">Hometown</a>
+		 <a href="MusicAlbum3.html">Purpose</a>
+		</div>
+	  </div>
+	  <li><a class="FanClubHead" href="#FanClub">Fans</a></li>
+	  <li><a href="AboutPageDB.html">About</a></li>
+	  <li><a href="StoreDB.html">Store</a></li> 
+    </ul>
+  </div>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("MyDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+if (!e.target.matches('.dropbtn')) {
+var myDropdown = document.getElementById("MyDropdown");
+    if (myDropdown.classList.contains('show')) {
+	myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+<div id="myNav" class="overlay">
+   <span class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  <a href="javascript:void(0)" class="CloseButton" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="HomePageDB.html">Home</a>
+    <a class="active" href="TourDB.html">Tour</a>
+	<a href="NewsDB.html">News</a>
+    <a href="#">Music</a>
+	 <div class="MusicDropDown">
+	    <a href="MusicAlbum1.html">JR II's Greatest Hits</a>
+		<a href="MusicAlbum2.html">Hometown</a>
+		<a href="MusicAlbum3.html">Purpose</a>
+	 </div>
+    <a href="FansDB.html">Fans</a>
+	<a href="AboutPageDB.html">About</a>
+	<a href="StoreDB.html">Store</a>
+  </div>
+  <script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+</header>
+
+<body>
+<div class="TourBackground">
+<div class="TourContainer">
+ <h1 class="TourTitle">Tour</h1>
+<div class="TourInfo">
+  <div class="Dates">
+    <h2>Apr Apr 10 - 12</h2>
+	<h2>Apr Apr 13 - 16</h2>
+	<br>
+	<h2>Apr Mar 28 - 2</h2>
+	<br>
+	<h2>Mar 22</h2>
+	<h2>Apr 4</h2>
+	<br>
+	<br>
+	<h2>Apr 16</h2>
+	<br>
+	<br>
+	<h2>July 20</h2>
+  </div>
+  <div class="TourLocation">
+    <h2>Lubbock, Texas</h2>
+	<p>Jones AT&T Stadium</p>
+	<h2>Durham, North Carolina</h2>
+	<p>Wingate by Wyndham Raleigh Durham </p>
+	<h2>Tulsa, Oklahoma</h2>
+	<p>La Fortune Stadium</p>
+	<h2>Las Vegas, Nevada</h2>
+	<p>The Foundry</p>
+	<h2>Modesto, California</h2>
+	<p>Gallo Center</p>
+	<h2>Tuscon, Arizona</h2>
+	<p>The Rock</p>
+	<h2>Nashville, Tennessee</h2>
+	<p>Ryman Auditorium</p>
+  </div>
+  <div class="TicketHolder">
+  <div class="Tickets">
+    <button><a class="ButtonWord" href="#Buy1">Buy Tickets</a></button>
+  </div>
+  <div class="Tickets2">
+	<button><a class="ButtonWord" href="#Buy2">Buy Tickets</a></button>
+  </div>
+  <div class="Tickets3">
+	<button><a class="ButtonWord" href="#Buy3">Buy Tickets</a></button>
+  </div>
+   <div class="Tickets4">
+	<button><a class="ButtonWord" href="#Buy4">Buy Tickets</a></button>
+  </div>
+   <div class="Tickets5">
+	<button><a class="ButtonWord" href="#Buy4">Buy Tickets</a></button>
+  </div>
+   <div class="Tickets6">
+	<button><a class="ButtonWord" href="#Buy4">Buy Tickets</a></button>
+  </div>
+   <div class="Tickets7">
+	<button><a class="ButtonWord" href="#Buy4">Buy Tickets</a></button>
+  </div>
+  </div>
+</div>
+</div>
+</div>
+<div class="TourBackground2">
+ <h1 class="TourTitle2">Tour</h1>
+<div class="TourLocationHolder">
+  <div class="TourLocation2">
+    <div class="Date">
+	  <h2>Apr 10-12</h2>
+	</div>
+	<div class="LocationName">
+	<h2>Lubbock, Texas</h2>
+	<p>Jones AT&T Stadium</p>
+	</div>
+  </div>
+   <div class="Tickets">
+    <a class="ButtonWord" href="https://www.ticketmaster.com/" target="_blank"><button>Buy Tickets</button></a>
+  </div>
+   <div class="TourLocation2">
+    <div class="Date">
+	<h2>Apr 13-16</h2>
+	</div>
+	<div class="LocationName">
+	<h2>Durham, North Carolina</h2>
+	<p>Wingate by Wyndham Raleigh Durham </p>
+	</div>
+  </div>
+   <div class="Tickets">
+    <a class="ButtonWord" href="https://www.ticketmaster.com/" target="_blank"><button>Buy Tickets</button></a>
+  </div>
+    <div class="TourLocation2">
+     <div class="Date">
+	 <h2>Apr 28- Mar 2</h2>
+	</div>
+	<div class="LocationName">
+	<h2>Tulsa, Oklahoma</h2>
+	<p>La Fortune Stadium</p>
+	</div>
+  </div>
+   <div class="Tickets">
+    <a class="ButtonWord" href="https://www.ticketmaster.com/" target="_blank"><button>Buy Tickets</button></a>
+  </div>
+    <div class="TourLocation2">
+     <div class="Date">
+	 <h2>Mar 22</h2>
+	</div>
+	<div class="LocationName">
+	<h2>Las Vegas, Nevada</h2>
+	<p>The Foundry</p>
+	</div>
+  </div>
+   <div class="Tickets">
+    <a class="ButtonWord" href="https://www.ticketmaster.com/" target="_blank"><button>Buy Tickets</button></a>
+  </div>
+  <div class="TourLocation2">
+     <div class="Date">
+	 <h2>Apr 4</h2>
+	</div>
+	<div class="LocationName">
+	<h2>Modesto, California</h2>
+	<p>Gallo Center</p>
+	</div>
+  </div>
+   <div class="Tickets">
+    <a class="ButtonWord" href="https://www.ticketmaster.com/" target="_blank"><button>Buy Tickets</button></a>
+  </div>
+  <div class="TourLocation2">
+     <div class="Date">
+	 <h2>Apr 16</h2>
+	</div>
+	<div class="LocationName">
+	<h2>Tuscon, Arizona</h2>
+	<p>The Rock</p>
+	</div>
+  </div>
+   <div class="Tickets">
+    <a class="ButtonWord" href="https://www.ticketmaster.com/" target="_blank"><button>Buy Tickets</button></a>
+  </div>
+  <div class="TourLocation2">
+     <div class="Date">
+	 <h2>July 20</h2>
+	</div>
+	<div class="LocationName">
+	<h2>Nashville, Tennessee</h2>
+	<p>Ryman Auditorium</p>
+	</div>
+  </div>
+   <div class="Tickets">
+    <a class="ButtonWord" href="https://www.ticketmaster.com/" target="_blank"><button>Buy Tickets</button></a>
+  </div>
+  <br>
+  <br>
+  <br>
+</div> 
+</div>
+
+</body>
+<footer class="footer">
+  <p>Copyright &copy; 2018 JR II</p>
+  <img src="JuniorLogo.png"/>
+  <p>Created by the Juanita High School TSA Chapter<br>Want to Learn More? Visit: esthermliu.github.io/JHSWebsite</p>
+</footer>
+<footer class="footer2">
+  <img src="JuniorLogo.png"/>
+  <p>Copyright &copy; 2018 JR II</p>
+  <p class="FooterBottom">Created by the Juanita High School TSA Chapter<br>Want to Learn More? Visit: esthermliu.github.io/JHSWebsite</p>
+</footer>
+</html>

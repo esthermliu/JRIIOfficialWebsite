@@ -1,0 +1,502 @@
+<?php
+error_reporting(-1);
+ini_set('display_errors', 'On');
+set_error_handler("var_dump"); 
+if(isset($_POST['submit'])){
+    $to = "s-eliu@lwsd.org"; // this is your Email address
+    $from = $_POST['email']; // this is the sender's Email address
+    $first_name = $_POST['first_name'];
+    $last_name = $_POST['last_name'];
+    $subject = "Form submission";
+    $subject2 = "Copy of your form submission";
+    $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];
+    $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
+    $headers = "From:" . $from;
+    $headers2 = "From:" . $to;
+    mail($to,$subject,$message,$headers);
+    //mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+    echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
+    // You can also use header('Location: thank_you.php'); to redirect to another page.
+    }
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8"> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="HomepageCss.css">
+	<link rel="stylesheet" href="HomepageMediaCss.css">
+	<link rel="stylesheet" href="StyleSheetDB.css">
+	<link rel="shortcut icon" type="image/png" href="ActualFavicon.png"/>
+	<link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet"> 
+    <title>About JR II</title>
+</head>
+<header>
+  <div class="logo-box">
+    <a class="HomePage" href="HomepageDB.html"><img src="JuniorLogo.png"></a>
+  </div>
+  <div class="second-box">
+    <ul>      
+      <li><a class="active" href="HomePageDB.html">Home</a></li>
+	  <li><a href="TourDB.html">Tour</a></li>
+	  <li><a href="NewsDB.html">News</a></li>
+	  <div class="Dropdown">
+	    <li><button class="dropbtn" onclick="myFunction()">Music</button></li>
+		<div class="DropDownContent" id="MyDropdown">
+		 <a href="MusicAlbum1.html">JR II's Greatest Hits</a>
+		 <a href="MusicAlbum2.html">Hometown</a>
+		 <a href="MusicAlbum3.html">Purpose</a>
+		</div>
+	  </div>
+	  <li><a class="FanClubHead" href="FansDB.html">Fans</a></li>
+	  <li><a href="AboutPageDB.html">About</a></li>
+	  <li><a href="StoreDB.html">Store</a></li> 
+    </ul>
+  </div>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("MyDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+if (!e.target.matches('.dropbtn')) {
+var myDropdown = document.getElementById("MyDropdown");
+    if (myDropdown.classList.contains('show')) {
+	myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+
+<div id="myNav" class="overlay">
+   <span class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  <a href="javascript:void(0)" class="CloseButton" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a class="active" href="HomePageDB.html">Home</a>
+    <a href="TourDB.html">Tour</a>
+	<a href="NewsDB.html">News</a>
+    <a href="#">Music</a>
+	 <div class="MusicDropDown">
+	    <a href="MusicAlbum1.html">JR II's Greatest Hits</a>
+		<a href="MusicAlbum2.html">Hometown</a>
+		<a href="MusicAlbum3.html">Purpose</a>
+	 </div>
+    <a href="FansDB.html">Fans</a>
+	<a href="AboutPageDB.html">About</a>
+	<a href="StoreDB.html">Store</a>
+  </div>
+
+</div>
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+</header>
+<script>
+var slideIndex = 1;
+
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("MySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" Active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " Active";
+}
+</script>
+<body>
+  <section class="StudentActivities">
+	<div class="StudentActivitiesInfo">
+	</section>
+	<div class="SlideShowContainer">
+<div class="DotContainer">
+	<div class="Dots">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>   
+</div> 
+</div>
+    <div class="MySlides fade">
+	  <img src="JuniorSecondPic.png"/>
+	</div>
+	<div class="MySlides fade">
+	  <img src="JuniorFrontPicFinal.png"/>
+	</div>
+	<div class="MySlides fade">
+	  <a href="AboutPageDB.html"><img src="JuniorOrigin.png"/></a>
+	</div>
+	<div class="MySlides fade">
+	  <img src="JuniorBenchmark.png"/>
+	</div>	
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<div class="TourBackground">
+ <h1 class="TourTitle">Tour</h1>
+<div class="TourInfo">
+  <div class="Dates">
+    <h2>Apr Apr 10 - 12</h2>
+	<h2>Apr Apr 13 - 16</h2>
+	<br>
+	<h2>Apr Mar 28 - 2</h2>
+	<br>
+	<h2>Mar 22</h2>
+  </div>
+  <div class="TourLocation">
+    <h2>Lubbock, Texas</h2>
+	<p>Jones AT&T Stadium</p>
+	<h2>Durham, North Carolina</h2>
+	<p>Wingate by Wyndham Raleigh Durham </p>
+	<h2>Tulsa, Oklahoma</h2>
+	<p>La Fortune Stadium</p>
+	<h2>Las Vegas, Nevada</h2>
+	<p>The Foundry</p>
+  </div>
+  <div class="TicketHolder">
+  <div class="Tickets">
+    <a class="ButtonWord" href="https://www.ticketmaster.com/" target="_blank"><button>Buy Tickets</button></a>
+  </div>
+  <div class="Tickets2">
+	<a class="ButtonWord" href="https://www.ticketmaster.com/" target="_blank"><button>Buy Tickets</button></a>
+  </div>
+  <div class="Tickets3">
+	<a class="ButtonWord" href="https://www.ticketmaster.com/" target="_blank"><button>Buy Tickets</button></a>
+  </div>
+   <div class="Tickets4">
+	<a class="ButtonWord" href="https://www.ticketmaster.com/" target="_blank"><button>Buy Tickets</button></a>
+  </div>
+  </div>
+</div>
+<div class="AllTickets">
+    <a class="AllButton1" href="TourDB.html"><button>All Tickets</button></a>
+</div>
+</div>
+
+
+<div class="TourBackground2">
+ <h1 class="TourTitle2">Tour</h1>
+<div class="TourLocationHolder">
+  <div class="TourLocation2">
+    <div class="Date">
+	  <h2>Apr 10-12</h2>
+	</div>
+	<div class="LocationName">
+	<h2>Lubbock, Texas</h2>
+	<p>Jones AT&T Stadium</p>
+	</div>
+  </div>
+   <div class="Tickets">
+    <a class="ButtonWord" href="https://www.ticketmaster.com/" target="_blank"><button>Buy Tickets</button></a>
+  </div>
+   <div class="TourLocation2">
+    <div class="Date">
+	<h2>Apr 13-16</h2>
+	</div>
+	<div class="LocationName">
+	<h2>Durham, North Carolina</h2>
+	<p>Wingate by Wyndham Raleigh Durham </p>
+	</div>
+  </div>
+   <div class="Tickets">
+    <a class="ButtonWord" href="https://www.ticketmaster.com/" target="_blank"><button>Buy Tickets</button></a>
+  </div>
+    <div class="TourLocation2">
+     <div class="Date">
+	 <h2>Apr 28- Mar 2</h2>
+	</div>
+	<div class="LocationName">
+	<h2>Tulsa, Oklahoma</h2>
+	<p>La Fortune Stadium</p>
+	</div>
+  </div>
+   <div class="Tickets">
+    <a class="ButtonWord" href="https://www.ticketmaster.com/" target="_blank"><button>Buy Tickets</button></a>
+  </div>
+    <div class="TourLocation2">
+     <div class="Date">
+	 <h2>Mar 22</h2>
+	</div>
+	<div class="LocationName">
+	<h2>Las Vegas, Nevada</h2>
+	<p>The Foundry</p>
+	</div>
+  </div>
+   <div class="Tickets">
+    <a class="ButtonWord" href="https://www.ticketmaster.com/" target="_blank"><button>Buy Tickets</button></a>
+  </div>
+</div>
+<div class="AllTickets">
+    <a class="AllButton1" href="TourDB.html"><button>All Tickets</button></a>
+</div>  
+</div>
+
+
+<section class="PinkBackground">
+  <h1 class="NewTitle">What's New</h1>
+ <div class="NewInfo">
+   <div class="News">
+   <h2 class="NewsTitle">News</h2>
+     <div class="News1">
+	 <img src="TexasPic.jpg" alt="Lubbock, Texas">
+	 <h2>Come Join Us In Lubbock, Texas for Some Rockin' Fun!
+	 <a href="NewsDB.html">More ></a>
+	 </h2>
+	 </div>
+	   <div class="News2">
+	   <img src="JuniorFamous.jpg" alt="Concert">
+	 <h2>Free JR II Merchandise Giveaway for the month of April!
+	 <a href="NewsDB.html">More ></a>
+	 </h2>
+	   </div>
+	     <div class="News3">
+		 <img src="Hospital.jpg" alt="Concert">
+	 <h2>JR II celebrated his birthday with some of his biggest fans: children!
+	 <a href="NewsDB.html">More ></a>
+	 </h2>
+	     </div>
+		  <div class="AllNews">
+			<a class="AllButton" href="NewsDB.html"><button>All News</button></a>
+		</div>
+   </div>
+ <div class="FanClub">
+   <h2 class="FanClubTitle">Fan Club</h2>
+   <div class="UltimateContainer">
+   <div class="FanContainer">
+   <img src="FanPic.jpg" alt="Concert Time!!">
+     <div class="PersonHolder">
+	   <img src="PotatoActual.png">
+	   <a href="#Home"><h2 class="PersonName">SammyUrtzal71</h2></a>
+	 </div>
+   </div>
+   <div class="FanText">
+	  <p>JR II rocked in California last week!!! We love you JR!!!!!</p>
+	</div>
+	<div class="FanIcons">
+	  <div class="Like">
+	  <i class="fa fa-heart" aria-hidden="true"></i>
+	  <a href="#Like">Like (10)</a>
+	  <i class="fa fa-comment" aria-hidden="true"></i>
+	  <a href="#Comment">Comment (12)</a>
+	  <a href="#ReadMore">Read More > </a>
+	  </div>
+	</div>
+ </div>
+ <div class="AllPosts">
+    <button><a class="AllButton" href="#AllBuy">All Posts</a></button>
+</div>
+ </div>
+ </div>
+</section>
+
+<section class="FanClubSection">
+  <div class="MainContainer">
+    <div class="JoinInfo">
+	  <h1>New Here?</h1>
+	  <h2>Join the JR II FanClub Now! </h2>
+	  <p>Members get access to pre-sale tickets, contests, exclusive content, and more!</p>
+	  <div class="SignIn">
+	   <div class="LogIn">
+         <button onclick="document.getElementById('id01').style.display='block'" class="AllButton" >Login</button>
+       </div>
+	        <div id="id01" class="modal">
+			  <form class="modal-content animate" action="/action_page.php">
+				<div class="imgcontainer">
+				  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+				  <img src="Avatar.png" alt="Avatar" class="avatar">
+				</div>
+
+				<div class="container">
+				  <label for="uname"><b>Username</b></label>
+				  <input type="text" placeholder="Enter Username" name="uname" required>
+
+				  <label class="Password" for="psw"><b>Password</b></label>
+				  <input type="password" placeholder="Enter Password" name="psw" required>
+					
+				  <button class="LoginButton2" type="submit">Login</button>
+				  <label>
+					<input type="checkbox" checked="checked" name="remember"> Remember me
+				  </label>
+				</div>
+				<div class="container" style="background-color:#f1f1f1">
+				  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+				</div>
+			  </form>
+			</div>
+			<script>
+				// Get the modal
+				var modal = document.getElementById('id01');
+
+				// When the user clicks anywhere outside of the modal, close it
+				window.onclick = function(event) {
+					if (event.target == modal) {
+						modal.style.display = "none";
+					}
+				}
+				</script>
+	   <div class="JoinIn">
+         <button onclick="document.getElementById('id02').style.display='block'">Join</button>
+       </div>
+	   <div id="id02" class="modal2">
+  <span onclick="document.getElementById('id02').style.display='none'" class="close2" title="Close Modal">times;</span>
+  <form class="modal-content2 animate" action="/action_page.php">
+    <div class="container2">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+     <!-- <p>By creating an account you agree to our <a href="#" style="color:dodgerblue" class="Terms">Terms & Privacy</a>.</p>-->
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn2">Cancel</button>
+        <button type="submit" class="signup2">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+<script>
+// Get the modal
+var modal = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+	</div>
+	</div>
+  </div>
+</section>
+<section class="MusicVideos">
+ <div class="MusicContainer">
+   <div class="Music">
+     <h1>Music</h1>
+	 <p>My genre is electronic music. I have experimented with it ever since I was in high school, and ever since then, I have fallen in love with it. Below is my most recent song release. 
+	    Enjoy!</p>
+	<div class="AudioContainer">
+	<img src="BenchmarkPic.jpg"/>
+	  <div class="Audio">
+	    <h2>Benchmark</h2>
+	    <p>JR II</p>
+	    <audio src="Benchmark.mp3" controls="" type="audio/mpeg"></audio>
+	  </div>
+   </div>
+    <div class="AllSongs">
+	  <div class="Alleyways">
+	   <a href="#"><h3> 2 Alleyways</h3></a>
+	   <p>2:34</p>
+	  </div>
+	  <div class="ImagineCats">
+	   <a href="#"><h3> 3 Imagine Cats</h3></a>
+	   <p>4:01</p>
+	  </div>
+	  <div class="TheBeets">
+	   <a href="#"><h3> 4 The Beets</h3></a>
+	   <p>3:05</p>
+	  </div>
+	  <div class="Republic">
+	   <a href="#"><h3> 5 TwoRepublics</h3></a>
+	   <p>3:24</p>
+	  </div>
+	  <div class="CatCity">
+	   <a href="#"><h3> 6 CatCity</h3></a>
+	   <p>3:24</p>
+	  </div>
+	  <div class="HeyBob">
+	   <a href="#"><h3> 5 Hey Bob</h3></a>
+	   <p>3:24</p>
+	  </div>
+	  <div class="Green">
+	   <a href="#"><h3> 5 Green</h3></a>
+	   <p>3:24</p>
+	  </div>
+	</div>
+	 <div class="AllMusic">
+         <a class="AllButton" href="MusicAlbum1.html"><button>All Music</button></a>
+     </div>
+   </div>
+ </div>
+</section>
+<section class="JuniorSocial">
+  <div class="JuniorSocialInfo">
+    <div class="JuniorSocialWord">
+	  <h3>Junior</h3>
+	  <h3 class="Social">Social</h3>
+	</div>
+	<div class="SocialMedia">
+	  <a href="https://www.facebook.com/" target="_blank" ><i class="fa fa-facebook"></i></a>
+	  <a href="https://www.instagram.com/" target="_blank" ><i class="fa fa-instagram"></i></a>
+	  <a href="https://twitter.com/" target="_blank" ><i class="fa fa-twitter"></i></a>
+	</div>
+  </div>
+  <div class="EmailHolder">
+  <div class="JoinEmail">
+  <h3>Join the Email List</h3>
+  </div>
+  <div class="EmailForm">
+	<form action="" method="post">
+	<input class="EmailBox" type="text" placeholder="Email" name="email" required>
+	<input type="submit" name="submit" value="Submit">
+	</form>
+  </div>
+  </div>
+</section>
+
+
+ <script>
+showSlides(slideIndex);
+</script>
+</body>
+<footer class="footer">
+  <p>Copyright &copy; 2018 JR II</p>
+  <img src="JuniorLogo.png"/>
+  <p>Created by the Juanita High School TSA Chapter<br>Want to Learn More? Visit: esthermliu.github.io/JHSWebsite</p>
+</footer>
+<footer class="footer2">
+  <img src="JuniorLogo.png"/>
+  <p>Copyright &copy; 2018 JR II</p>
+  <p class="FooterBottom">Created by the Juanita High School TSA Chapter<br>Want to Learn More? Visit: esthermliu.github.io/JHSWebsite</p>
+</footer>
+</html>

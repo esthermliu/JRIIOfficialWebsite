@@ -1,0 +1,122 @@
+
+ .TourBackground {
+  background-image: url("CelebrationConcert.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+}
+
+.TourTitle {
+  text-shadow: 3px 3px 0px #c76037;
+  color:#dbb52f;
+  text-transform: uppercase;
+  padding-top: 10vh;
+}
+
+.TourInfo {
+  object-fit: cover;
+  width: 100vw;
+  max-width: 100%;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.Dates {
+  object-fit: contain;
+  width: 140px;
+  text-shadow: 3px 3px 0px #c76037;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.Dates h2 {
+  font-size: 30px;
+  padding-bottom: 15x;
+  padding-top: 10px;
+  color:#dbb52f;
+}
+
+.TourLocation {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 360px;
+  margin-left: 20px;
+  padding-bottom: 3%;
+}
+
+.TourLocation h2 {
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  font-size: 35px;
+}
+
+.TourLocation p {
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.Tickets, .Tickets2, .Tickets3, .Tickets4, .Tickets5, .Tickets6, .Tickets7 {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
+.TicketHolder {
+  display: flex;
+  flex-direction: column;
+  width: 430px;
+  align-items: flex-end;
+ }
+ 
+.Tickets button, .Tickets2 button, .Tickets3 button, .Tickets4 button, .Tickets5 button, .Tickets6 button, .Tickets7 button {
+  background-color: rgba(255,255,255,0);
+  border: 2px solid #dbb52f;
+  z-index: 2;
+  padding: 15px 15px;
+  margin: 35px;
+  margin-top: 50px;
+  color: #dbb52f;
+    -webkit-transition-duration: 0.2s; 
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+.Tickets button a, .Tickets2 button a, .Tickets3 button a, .Tickets4 button a, .Tickets5 button a, .Tickets6 button a, .Tickets7 button a {
+  color: #dbb52f;
+  text-transform: uppercase;
+}
+
+
+.Tickets:hover button, .Tickets2:hover button, .Tickets3:hover button, .Tickets4:hover button, .Tickets5:hover button, .Tickets6:hover button, .Tickets7:hover button { 
+  border-color: white;
+}
+
+.Tickets:hover button a, .Tickets2:hover button a, .Tickets3:hover button a, .Tickets4:hover button a, .Tickets5:hover button a, .Tickets6:hover button a, .Tickets7:hover button a {
+  color: white;
+}
+
+.TourContainer {
+  height: inherit;
+  width: inherit;
+  background-color:rgba(117, 119, 124, 0.7);
+}
+
+.footer2 {
+  display: none;
+}
+
+.TourBackground2 {
+  display: none;
+}

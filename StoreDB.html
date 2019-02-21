@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" media="screen and (max-width: 414px)" href="MediaCss.css">
+	<link rel="stylesheet" media="screen and (max-width: 414px)" href="StoreMediaCss.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="StoreDBCss.css">
+	<link rel="stylesheet" href="StyleSheetDB.css">
+	<link rel="shortcut icon" type="image/png" href="ActualFavicon.png"/>
+	<link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet"> 
+    <title>About JR II</title>
+</head>
+<header>
+  <div class="logo-box">
+    <a class="HomePage" href="HomepageDB.html"><img src="JuniorLogo.png"></a>
+  </div>
+  <div class="second-box">
+    <ul>      
+      <li><a href="HomePageDB.html">Home</a></li>
+	  <li><a href="TourDB.html">Tour</a></li>
+	  <li><a href="NewsDB.html">News</a></li>
+	  <div class="Dropdown">
+	    <li><button id="active" class="dropbtn" onclick="myFunction()">Music</button></li>
+		<div class="DropDownContent" id="MyDropdown">
+		 <a href="MusicAlbum1.html">JR II's Greatest Hits</a>
+		 <a href="MusicAlbum2.html">Hometown</a>
+		 <a href="MusicAlbum3.html">Purpose</a>
+		</div>
+	  </div>
+	  <li><a class="FanClubHead" href="#FanClub">Fans</a></li>
+	  <li><a href="AboutPageDB.html">About</a></li>
+	  <li><a class="active" href="StoreDB.html">Store</a></li> 
+    </ul>
+  </div>
+  <div class="AboutHeader">
+    <ul class="AboutList">      
+      <li><a href="MusicStore.html">Music</a></li>
+	  <li><a href="Apparel.html">Apparel</a></li>
+	  <li><a href="Accessories.html">Accessories</a></li>
+	  <li><a href="Bundle.html">Bundles</a></li>
+    </ul>
+  </div>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("MyDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+if (!e.target.matches('.dropbtn')) {
+var myDropdown = document.getElementById("MyDropdown");
+    if (myDropdown.classList.contains('show')) {
+	myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+<div id="myNav" class="overlay">
+   <span class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  <a href="javascript:void(0)" class="CloseButton" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a class="active" href="HomePageDB.html">Home</a>
+    <a href="TourDB.html">Tour</a>
+	<a href="NewsDB.html">News</a>
+    <a href="#">Music</a>
+	 <div class="MusicDropDown">
+	    <a href="MusicAlbum1.html">JR II's Greatest Hits</a>
+		<a href="MusicAlbum2.html">Hometown</a>
+		<a href="MusicAlbum3.html">Purpose</a>
+	 </div>
+    <a href="FansDB.html">Fans</a>
+	<a href="AboutPageDB.html">About</a>
+	<a href="StoreDB.html">Store</a>
+	 <div class="MusicDropDown">
+	    <a href="Accessories.html">Accessories</a>
+		<a href="Apparel.html">Apparel</a>
+		<a href="MusicStore.html">Music</a>
+		<a href="Bundle.html">Bundles</a>
+	 </div>
+  </div>
+  <script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+</header>
+<body class="StoreBody">
+<section class="StoreBackground">
+  <div class="StoreContainer">
+    <div class="StoreInfo">
+	  <h1>JR II Store</h1>
+	   <div class="BoxHolder">
+	     <div class="FirstBox">
+		   <div class="FirstInnerBox">
+		     <a href="Accessories.html">
+			 <div class="WordHolder">
+			 <h2>Accessories</h2>
+			 </div>
+		     <img src="AcessoriesPic.jpg"></a>
+		   </div>
+		   <div class="SecondInnerBox">
+		     <a href="MusicStore.html"><div class="WordHolder"><h2>Music</h2></div>
+			 <img src="MusicShop.jpg"></a>
+		   </div>
+		   <div class="ThirdInnerBox">
+		     <a href="Apparel.html"><div class="WordHolder"><h2>Apparel</h2></div>
+			 <img src="Apparel.jpg"></a>
+		   </div>
+		 </div>
+		 <div class="SecondBox">
+		   <a href="Bundle.html"><div class="WordHolder2"><h2>Bundle</h2></div>
+		   <img src="Bundle.jpg"></a>
+		 </div>
+	   </div>
+	</div>
+  </div>
+</section>
+<section class="Featured">
+  <div class="FeaturedTitle">
+  <h2>Featured<h2>
+  </div>
+  <div class="FeaturedHolder">
+    <div class="Box1">
+	  <a href="LoveJRShirt.html" class="ImageLink"><img src="ILoveJR.png"/></a>
+	  <a class="Link" href="LoveJRShirt.html"><h3>I Love JR II T-Shirt</h3></a>
+	  <p>$299.99</p>
+	</div>
+	<div class="Box1">
+	<a href="GreatestHits.html" class="ImageLink"><img src="JuniorFrontPicFinal2.png"/></a>
+	  <a class="Link" href="GreatestHits.html"><h3>JR II Greatest Hits Album</h3></a>
+	  <p>$29999.99</p>
+	</div>
+	<div class="Box1">
+	<a href="Hat.html" class="ImageLink"><img src="JrIIHat.png"/></a>
+	  <a class="Link" href="Hat.html"><h3>JR II Hat</h3></a>
+	  <p>$39999.99</p>
+	</div>
+	<div class="Box1">
+	<a href="Keychain.html" class="ImageLink"><img src="JrIIKeychain.png"/></a>
+	  <a class="Link" href="Keychain.html"><h3>JR II Custom Keychain</h3></a>
+	  <p>$399.99</p>
+	</div>
+	<div class="Box1">
+	<a href="LoveJRShirtBundle.html" class="ImageLink"><img src="Bundle1.png"/></a>
+	  <a class="Link" href="LoveJRShirtBundle"><h3>Love JR II Bundle</h3></a>
+	  <p>$1000000.99</p>
+	</div>
+	<div class="Box1">
+	<a href="JRHoodieBunch.html" class="ImageLink"><img src="JRHoodie.png"/></a>
+	  <a class="Link" href="JRHoodieBunch"><h3>JR II Hoodie Bundle</h3></a>
+	  <p>$999.99</p>
+	</div>
+	<div class="Box1">
+	<a href="RockOnShirt.html" class="ImageLink"><img src="RockOnShirt.png"/></a>
+	  <a class="Link" href="RockOnShirt.html"><h3>JR II Rock On T-Shirt</h3></a>
+	  <p>$899.99</p>
+	</div>
+	<div class="Box1">
+	<a href="HometownTanktop.html" class="ImageLink"><img src="HometownShirt.png"/></a>
+	  <a class="Link" href="HometownTanktop.html"><h3>JR II Hometown Tank Top</h3></a>
+	  <p>$999999.99</p>
+	</div>
+	<div class="Box1">
+	  <a href="Mug.html" class="ImageLink"><img src="JuniorMug.png"/></a>
+	  <a class="Link" href="Mug.html"><h3>I Love JR II Mug</h3></a>
+	  <p>$4599.99</p>
+	</div>
+	<div class="Box1">
+	  <a href="Necklace.html" class="ImageLink"><img src="RockOnNecklace.png"/></a>
+	  <a class="Link" href="Necklace.html"><h3>I Love JR II Necklace</h3></a>
+	  <p>$7899.99</p>
+	</div>
+	<div class="Box1">
+	  <a href="Purpose.html" class="ImageLink"><img src="PurposeShirt.png"/></a>
+	  <a class="Link" href="Purpose.html"><h3>JR II Purpose T-Shirt</h3></a>
+	  <p>$99999999.99</p>
+	</div>
+	<div class="Box1">
+	  <a href="TooCoolSweater.html" class="ImageLink"><img src="TooCoolShirt.png"/></a>
+	  <a class="Link" href="TooCoolSweater.html"><h3>JR II Too Cool Sweater</h3></a>
+	  <p>$889999999.99</p>
+	</div>
+  </div>
+</section>
+
+</body>
+<footer class="footer">
+  <p>Copyright &copy; 2018 JR II</p>
+  <img src="JuniorLogo.png"/>
+  <p>Created by the Juanita High School TSA Chapter<br>Want to Learn More? Visit: esthermliu.github.io/JHSWebsite</p>
+</footer>
+<footer class="footer2">
+  <img src="JuniorLogo.png"/>
+  <p>Copyright &copy; 2018 JR II</p>
+  <p class="FooterBottom">Created by the Juanita High School TSA Chapter<br>Want to Learn More? Visit: esthermliu.github.io/JHSWebsite</p>
+</footer>
+</html>

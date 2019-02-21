@@ -1,0 +1,126 @@
+.NewsBiggestContainer {
+  background-image: url("ElectronicMusic.jpg");
+  background-repeat: no-repeat;  
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+.NewsContainer {
+  background-color:rgba(117, 119, 124, 0.6);
+  height: inherit;
+  width: inherit;
+}
+
+.NewsContainer h1 {
+  text-shadow: 3px 3px 0px #c76037;
+  color:#dbb52f;
+}
+
+.NewsInfo {
+  padding-top: 10vh; 
+  margin: 0 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.NewsInfo h1 {
+  padding-bottom: 5vh;
+}
+
+.NewsInfoBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.NewsBox1, .HiddenNewsBox1 {
+  display: flex;
+  border-bottom: 3px solid rgba(255,255,255,.3);
+}
+
+.HiddenNewsBox1 {
+  display: none;
+}
+
+
+.NewsBox1 img, .HiddenNewsBox1 img {
+  height: 90%;
+  width: 40%;
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-bottom: 2%;
+  object-fit: cover;
+}
+
+.NewsInfo1 h3, .NewsInfo2 h3, .NewsInfo3 h3 {
+  font-family: "Courier new", sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.NewsInfo1, .NewsInfo2, .NewsInfo3{
+  padding-left: 2%;
+}
+
+.AllNews {
+  height: auto;
+  width: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+  margin: 0 20%;
+}
+
+.AllButton button {
+  color: #dbb52f;
+  text-transform: uppercase;
+}
+
+.AllNews:hover button {
+  border-color: white;
+ }
+ 
+ .AllNews:hover a button {
+   color: white;
+}
+.AllButton button {
+  background-color: rgba(255,255,255,0);
+  border: 2px solid #dbb52f;
+  z-index: 2;
+  padding: 15px 15px;
+  margin: 35px;
+  color: #dbb52f;
+    -webkit-transition-duration: 0.2s; 
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+.ActualBox {
+  height: inherit;
+  width: inherit;
+  display: flex;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.Link h3 {
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+
+
+.Link:hover h3 {
+  color: #dbb52f;
+}
+
+.footer2 {
+  display: none;
+}
+
+
+
+

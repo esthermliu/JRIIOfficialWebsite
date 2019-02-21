@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="HomepageCss.css">
+    <title>About JR II</title>
+</head>
+<header>
+  <div class="logo-box">
+    <a class="HomePage" href="Homepage.html"><img src="JHSlogo.png"></a>
+  </div>
+  <div class="second-box">
+    <ul>      
+      <li><a class="active" href="#Home">Home</a></li>
+	  <li><a href="#Tour">Tour</a></li>
+	  <li><a href="#News">News</a></li>
+	  <li><a href="#Music">Music</a></li>
+	  <li><a href="#Photos">Photos</a></li>
+	  <li><a href="#FanClub">Fan Club</a></li>
+	  <li><a href="#About">About</a></li>
+	  <li><a href="#Store">Store</a></li> 
+    </ul>
+  </div>
+</header>
+<body>
+    <h1>ABOUT JR II</h1>
+    <div class="Headers">
+      <h2>Early Life</h2>
+    </div>
+    <div class="Paragraphs">
+    <p>I had quite humble beginnings as most artists do. Growing up in a suburb of Detroit was normal until my dad lost
+      his job. That's when everything changed. I was 12 at the time, but I still knew that I needed to help my family.
+      Because of this loss, we were forced to move. I had to make a new set of friends in that oh-so-awkward period of
+      time known as adolescence. I needed to figure out what to do to help my family. When I started high school, I
+      decided to take my school's Music Theory class, which was part of the <a href="https://esthermliu.github.io/JHSWebsite/CTE%20Program.html">CTE program</a>.
+        <!--makelinkdifferenttextcolor-->
+      Little did I know that would be xthe most crucial decision of my life.</p>
+    </div>
+    <br>
+    <div class="Headers">
+      <h2>Experimenting</h2>
+    </div>
+    <div class="Paragraphs">
+    <p>After picking up the basics of music, I began experimenting with different rhythmic and melodic structures while
+    trying to craft my own style. I messed around with the piano and realized that my melodies and harmonies had an
+      electronic feel to them, so that would be my genre. But I was stuck doing all this by myself. I needed someone to
+      share my ideas with.</p>
+    </div>
+    <br>
+    <div class="Headers">
+      <h2>Growing</h2>
+    </div>
+    <div class="Paragraphs">
+      <p>After talking to some of my friends about this problem, they told me to talk to a couple of upcoming rappers in
+      our school. However, I quickly found out that my style and structure did not suit the needs of hip hop. I decided
+      something then: I would have to work on my skills and create songs all by myself. I greatly improved and started to
+      publicize some of my work.</p>
+    </div>
+    <br>
+    <div class="Headers">
+      <h2>Rising to Fame</h2>
+    </div>
+    <div class="Paragraphs">
+      <p>After putting out a couple of songs and getting fairly positive feedback from them, I decided tht I would not
+      have to go to college and could branch out and gain more income without it. In September 2016, I released my most
+      popular album, "Hometown", and it blew up. TArtists</p>
+    </div>
+    <br>
+    <div class="Headers">
+      <h2>Present Day</h2>
+    </div>
+    <div class="Paragraphs">
+      <p>Now, I live in Los Angeles, California and enjoy the many fan letters I get every day. My music has gained a lot
+      of attraction in LA, so I can't even step out for a quick walk without getting recognized! Alright, that's all I gotta
+      say about myself. Click one of the links at the top to go to another page about my music.</p>
+    </div>
+</body>
+</html>

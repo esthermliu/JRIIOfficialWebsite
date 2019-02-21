@@ -1,0 +1,104 @@
+@media screen and (max-width: 414px) {
+.TourTitle2 {
+  font-size: 10vh;
+  padding-top: 3vh;
+  display: block !important;
+   text-shadow: 3px 3px 0px #c76037;
+  color:#dbb52f;
+  text-transform: uppercase;
+  padding-bottom: 3vh;
+}
+
+.TourBackground2 {
+  background-image: url("JuniorTourPic.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+}
+
+
+.TourLocation2 {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Date h2 {
+  color: #dbb52f;
+  text-shadow: 3px 3px 0px #c76037;
+  width: 30vw;
+  margin-left: 5vw;
+}
+
+.LocationName {
+  width: 60vw;
+  margin-right: 5vw;
+}
+
+.LocationName h2 {
+  margin-bottom: 0;
+}
+
+.LocationName p {
+  margin-top: 0;
+  color: #c5cdd8;
+}
+
+.Tickets {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row !important;
+  width: auto !important;
+  height: 50px;
+  margin-bottom: 2vh;
+}
+
+.Tickets button {
+  height: 50px;
+  color: #dbb52f;
+  text-transform: uppercase;
+}
+
+
+
+
+.TourInfo {
+  object-fit: cover;
+  width: 100vw;
+  max-width: 100%;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.AllTickets {
+  width: 100%;
+}
+
+.AllTickets button {
+  width: 100%;
+  margin: 0;
+  margin-top: 5vh;
+  padding-left: 30vw;
+  padding-right: 30vw;
+  background-color: #dbb52f;
+  color: black !important;
+  box-shadow: 5px 5px #c76037;
+}
+
+.TourBackground {
+  display: none !important;
+}
+
+}

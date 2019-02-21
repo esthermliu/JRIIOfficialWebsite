@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8"> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="NewsDBCss.css">
+	<link rel="stylesheet" media="screen and (max-width: 414px)" href="MediaCss.css">
+	<link rel="stylesheet" media="screen and (max-width: 414px)" href="NewsMediaCss.css">
+	<link rel="stylesheet" href="StyleSheetDB.css">
+	<link rel="shortcut icon" type="image/png" href="ActualFavicon.png"/>
+	<link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet"> 
+    <title>About JR II</title>
+</head>
+<header>
+  <div class="logo-box">
+    <a class="HomePage" href="HomepageDB.html"><img src="JuniorLogo.png"></a>
+  </div>
+  <div class="second-box">
+    <ul>      
+      <li><a href="HomePageDB.html">Home</a></li>
+	  <li><a href="TourDB.html">Tour</a></li>
+	  <li><a class="active" href="NewsDB.html">News</a></li>
+	  <div class="Dropdown">
+	    <li><button class="dropbtn" onclick="myFunction()">Music</button></li>
+		<div class="DropDownContent" id="MyDropdown">
+		 <a href="MusicAlbum1.html">JR II's Greatest Hits</a>
+		 <a href="MusicAlbum2.html">Hometown</a>
+		 <a href="MusicAlbum3.html">Purpose</a>
+		</div>
+	  </div>
+	  <li><a class="FanClubHead" href="FansDB.html">Fans</a></li>
+	  <li><a href="AboutPageDB.html">About</a></li>
+	  <li><a href="StoreDB.html">Store</a></li> 
+    </ul>
+  </div>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("MyDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+if (!e.target.matches('.dropbtn')) {
+var myDropdown = document.getElementById("MyDropdown");
+    if (myDropdown.classList.contains('show')) {
+	myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+<div id="myNav" class="overlay">
+   <span class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  <a href="javascript:void(0)" class="CloseButton" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="HomePageDB.html">Home</a>
+    <a href="TourDB.html">Tour</a>
+	<a class="active" href="NewsDB.html">News</a>
+    <a href="#">Music</a>
+	 <div class="MusicDropDown">
+	    <a href="MusicAlbum1.html">JR II's Greatest Hits</a>
+		<a href="MusicAlbum2.html">Hometown</a>
+		<a href="MusicAlbum3.html">Purpose</a>
+	 </div>
+    <a href="FansDB.html">Fans</a>
+	<a href="AboutPageDB.html">About</a>
+	<a href="StoreDB.html">Store</a>
+  </div>
+  <script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+</header>
+
+<body>
+<section class="NewsBiggestContainer">
+  <div class="NewsContainer">
+    <div class="NewsInfo">
+	  <h1>News</h1>
+	  <div class="NewsInfoBox">
+	  <div class="NewsBox1">
+	    <img src="TexasPic.jpg" alt="Lubbock, Texas">
+		<div class="NewsInfo1">
+		<p>March 5, 2019</p>
+	    <h3>Come Join Us In Lubbock, Texas for Some Rockin' Fun!</h3>
+		<p>This weekend, come join us in Lubbock, Texas for JR II's electrifying concert. It will be held at the Jones AT&T Stadium from April 10-12. </p>
+		</div>
+	  </div>
+	  <div class="NewsBox1">
+	    <img src="JuniorFamous.jpg">
+	    <div class="NewsInfo2">
+		<p>March 5, 2019</p>
+	    <h3>Free JR II Merchandise Giveaway for the month of April</h3>
+		<p>For the month of April, JR II is giving away free merchandise for his much loved fans. The only thing you need to do is sign up for the JR II official Fan Club and post a picture of yourself.
+			Then, you'll have to follow JR II on Facebook, Instagram, and Twitter, and post a comment as well. The free JR II merchandise includes mugs, keychains, necklaces, apparel (sweaters, hoodies, t-shirts, hats), and 
+			custom JR II bundles! </p>
+		</div>
+	  </div>
+	  <div class="NewsBox1">
+	    <img src="Hospital.jpg">
+	    <div class="NewsInfo3">
+		<p>February 20, 2019</p>
+	    <h3>JR II CELEBRATED HIS BIRTHDAY WITH SOME OF HIS BIGGEST FANS: CHILDREN!</h3>
+		<p>February 20 was JR II's birthday. He decided to visit the local children's hospital and spent the day signing autographs, playing music (school appropriate of course), and making the children laugh!
+			He also gave several lucky children free JR II merchandise! Both the children and JR II had a blast, and by the end of the day, they were all tuckered out and ready to go to bed. </p>
+		</div>
+	   </div>
+	   <div class="HiddenNewsBox1">
+		<div class="ActualBox">
+	    <img src="NewYear.jpg">
+	    <div class="NewsInfo3">
+		<p>January 1, 2019</p>
+	    <h3>Happy New Year's!</h3>
+		<p>JR II had a blast on New Year's performing at Seattle, Washington. The audience had a blast listening to JR's hype music. To all who were there, happy new year's and remember to keep those new year's resolutions!</p>
+		</div>
+		</div>
+	  </div>
+	  <div class="HiddenNewsBox1">
+		<div class="ActualBox">
+	    <div class="NewsInfo3">
+		<p>November 27, 2018</p>
+	    <h3>A Message to My Fans</h3>
+		<p>Thank you so much for all the support in recent years. Unfortunately, I may take a break for a month or so to look after my health as well as deal with some personal issues. Once again, 
+			thanks to all my fans for the unconditional love and support you guys have showered upon me these past years! Until next time, my beloved friends. -JR II</p>
+		</div>
+		</div>
+	  </div>
+	  <div class="HiddenNewsBox1">
+		<div class="ActualBox">
+	    <div class="NewsInfo3">
+		<p>October 4, 2018</p>
+	    <h3>Recent Complaints</h3>
+		<p>Recently, I have been receiving complaints from fans across the country regarding the lack of activity on the "news" page of my website. So, starting now, I am going to try to post at least every month
+			to keep everyone updated. Oh, and don't forget about my upcoming tour in Newark, New Jersey. It'll be a blast and I will be singing my hit 2016 album "Hometown" as well as my more recent album "Purpose".
+			-JR II</p>
+		</div>
+		</div>
+	  </div>
+	    <div class="HiddenNewsBox1">
+		<div class="ActualBox">
+	    <img src="LosAngeles.jpg">
+	    <div class="NewsInfo3">
+		<p>July 6, 2018</p>
+	    <h3>Fourth of July in Los Angeles, California</h3>
+		<p>JR II had sooo much fun at the July 4 concert. When it comes to summer in Los Angeles, the 4th of July is definitely one of the biggest highlights, and JR's concert was without a doubt the brightest of those
+		highlights. </p>
+		</div>
+		</div>
+	  </div>
+	   <div class="HiddenNewsBox1">
+		<div class="ActualBox">
+	    <div class="NewsInfo3">
+		<p>April 15, 2018</p>
+	    <h3>Durham, North Carolina Concert Cancelled</h3>
+		<p>Rain, rain, go away, come again another day...Sorry folks, but JR II's concert is unfortunately cancelled due to torrential downpour. Here's a heartfelt message from JR II himself:
+			Hello my dear friends, I am disappointed to announce that the concert is cancelled, but my love for you guys has not. I will always enjoy your support. Keep loving me, my dedicated fans! -JR II</p>
+		</div>
+		</div>
+	  </div>
+	<div class="HiddenNewsBox1">
+		<div class="ActualBox">
+	    <div class="NewsInfo3">
+		<p>December 21, 2017</p>
+	    <h3>Christmas Tour at Columbus, Ohio</h3>
+		<p>Columbus, Ohio GET READY FOR JR II!! But watch out, you better not cry and you better not pout, 'cause JR II is cominnnggggg to town!! JR II will be performing alongside some other familiar friends 
+			including SpongeBob, Peep the toad, amongst many other high-end celebrities. </p>
+		</div>
+		</div>
+	  </div>
+	    <div class="HiddenNewsBox1">
+		<div class="ActualBox">
+	    <img src="JRIIMusic.jpg" alt="Lubbock, Texas">
+	    <div class="NewsInfo3">
+		<p>September 5, 2017</p>
+	    <h3>An Explanation to My Dear Friends...</h3>
+		<p>I just launched this website recently, and so...this is my news section! Whadya think my beloved friends and fans? No need to compliment me though. Hehehehe, I am very very very humble. That's just yet another one of 
+			my strengths. </p>
+		</div>
+		</div>
+	  </div>
+	  </div>
+	</div>
+	  <div class="AllNews">
+    <a class="AllButton" id="load"><button>Load More</button></a>
+</div>
+  </div>
+</section>
+
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+$(function(){
+    $(".HiddenNewsBox1").slice(0, 0).show(); // select the first ten
+    $("#load").click(function(e){ // click event for load more
+        e.preventDefault();
+        $(".HiddenNewsBox1:hidden").slice(0, 2).show(); // select next 10 hidden divs and show them
+        if($(".HiddenNewsBox1:hidden").length == 0){ // check if any hidden divs still exist
+			 alert("You have reached the last news"); // alert if there are none left
+        }
+    });
+});
+</script>
+<footer class="footer">
+  <p>Copyright &copy; 2018 JR II</p>
+  <img src="JuniorLogo.png"/>
+  <p>Created by the Juanita High School TSA Chapter<br>Want to Learn More? Visit: esthermliu.github.io/JHSWebsite</p>
+</footer>
+<footer class="footer2">
+  <img src="JuniorLogo.png"/>
+  <p>Copyright &copy; 2018 JR II</p>
+  <p class="FooterBottom">Created by the Juanita High School TSA Chapter<br>Want to Learn More? Visit: esthermliu.github.io/JHSWebsite</p>
+</footer>
+</html>

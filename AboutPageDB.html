@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" media="screen and (max-width: 414px)" href="MediaCss.css">
+	<link rel="stylesheet" media="screen and (max-width: 414px)" href="AboutPageMediaCss.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="AboutPageDBCss.css">
+	<link rel="stylesheet" href="StyleSheetDB.css">
+	<link rel="shortcut icon" type="image/png" href="ActualFavicon.png"/>
+	<link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet"> 
+    <title>About JR II</title>
+</head>
+<header>
+  <div class="logo-box">
+    <a class="HomePage" href="HomepageDB.html"><img src="JuniorLogo.png"></a>
+  </div>
+  <div class="second-box">
+    <ul>      
+      <li><a href="HomePageDB.html">Home</a></li>
+	  <li><a href="TourDB.html">Tour</a></li>
+	  <li><a href="NewsDB.html">News</a></li>
+	  <div class="Dropdown">
+	    <li><button class="dropbtn" onclick="myFunction()">Music</button></li>
+		<div class="DropDownContent" id="MyDropdown">
+		 <a href="MusicAlbum1.html">JR II's Greatest Hits</a>
+		 <a href="MusicAlbum2.html">Hometown</a>
+		 <a href="MusicAlbum3.html">Purpose</a>
+		</div>
+	  </div>
+	  <li><a class="FanClubHead" href="#FanClub">Fans</a></li>
+	  <li><a a class="active" href="AboutPageDB.html">About</a></li>
+	  <li><a href="StoreDB.html">Store</a></li> 
+    </ul>
+  </div>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("MyDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+if (!e.target.matches('.dropbtn')) {
+var myDropdown = document.getElementById("MyDropdown");
+    if (myDropdown.classList.contains('show')) {
+	myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+<div id="myNav" class="overlay">
+   <span class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  <a href="javascript:void(0)" class="CloseButton" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="HomePageDB.html">Home</a>
+    <a href="TourDB.html">Tour</a>
+	<a href="NewsDB.html">News</a>
+    <a href="#">Music</a>
+	 <div class="MusicDropDown">
+	    <a href="MusicAlbum1.html">JR II's Greatest Hits</a>
+		<a href="MusicAlbum2.html">Hometown</a>
+		<a href="MusicAlbum3.html">Purpose</a>
+	 </div>
+    <a href="FansDB.html">Fans</a>
+	<a class="active" href="AboutPageDB.html">About</a>
+	<a href="StoreDB.html">Store</a>
+  </div>
+  <script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+</header>
+<div class="AboutHeader">
+    <ul class="AboutList">      
+      <li><a href="#EarlyLife">Early Life</a></li>
+	  <li><a href="#Experimenting">Experimenting</a></li>
+	  <li><a href="#Growing">Growing</a></li>
+	  <li><a href="#Fame">Rise to Fame</a></li> 
+	  <li><a href="#Present">Present Day</a></li> 
+    </ul>
+  </div>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+$("a[href='#EarlyLife']").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#EarlyLife").offset().top
+    }, 1000);
+});
+
+$("a[href='#Experimenting']").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#Experimenting").offset().top
+    }, 1000);
+});
+
+$("a[href='#Growing']").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#Growing").offset().top
+    }, 1000);
+});
+
+$("a[href='#Fame']").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#Fame").offset().top
+    }, 1000);
+});
+
+$("a[href='#Present']").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#Present").offset().top
+    }, 1000);
+});
+</script>
+<body>
+<article class="AboutJRArticle">
+<section class="OverallSection">
+<section id="EarlyLife" class="EarlyLife">
+    <h1>ABOUT JR II</h1>
+    <div class="Headers">
+      <h2>Early Life</h2>
+    </div>
+    <div class="Paragraphs">
+    <p>I had quite humble beginnings as most artists do. I was born on June 7, 1996 to a relatively poor family in a suburb of Detroit. Life was quite normal, and my family managed to scrape by with 
+	  the minimum wage job my dad had until he was suddenly laid off. That's when everything changed. I was 12 at the time, but I still knew that I needed to help my family.
+      Because of this loss, we were forced to move. At the new school, I had to make a new set of friends in that oh-so-awkward period of
+      time known as adolescence, but I was often bullied around by my fellow peers because of my family's poverty. I became withdrawn and happened to fall in with the wrong crowd. I followed 
+	  their lead in ditching school, doing drugs, smoking, drinking...</p>
+	<p>Soon, my parents found out about what I was doing. I was guilt-stricken after realizing my parents were doing so much for a better future for me
+	   while I was wasting my life away. I knew I needed to make a change. I broke ties between my old friends, and began finding friends who accepted the way I was.
+	   My grades greatly improved and my emotions stabilized, but I still felt as if I was missing something. All of my friends had something they enjoyed, whether 
+	   that be a sport or other activity, but I had nothing. One day, while running some errands at our local grocery store, they happened to be playing "Against
+	   the Wind" by Bob Seger, and the rest is history. I fell in love with music and began looking for any ways to learn more. I read books, listened to music I enjoyed, 
+	   and by the time I entered high school, I decided to take my school's Music Theory class, which was part of the <a href="https://esthermliu.github.io/JHSWebsite/CTE%20Program.html">CTE program</a>.
+        <!--makelinkdifferenttextcolor-->
+      Little did I know that would be the most crucial decision of my life.</p>
+	  <div class="ImageHolder">
+	 <img src="JRIIYoung.jpg"/>
+	 </div>
+    </div>
+ </section>  
+
+<section id="Experimenting" class="Experimenting">
+	<div class="Line">
+	
+	</div>
+    <div class="Headers">
+      <h2>Experimenting</h2>
+    </div>
+    <div class="Paragraphs">
+    <p>After picking up the basics of music, I began experimenting with different rhythmic and melodic structures while
+      trying to craft my own style. I messed around with the piano and realized that my melodies and harmonies had an
+      electronic feel to them, but when I asked my high school music teacher for some guidance, he simply laughed it off saying electronic music
+	  wasn't real music. He recommended that I try some other genres that were "real music" such as country, 
+	  classical, pop music, even rapping! I reluctantly gave up my plan to do electronic music in favor of the other genres. </p>
+	<p>But the more I experimented with other genres, the more I was drawn to the novelty of the electronic genre. All other genres felt so boring, and didn't 
+	   seem to hold nearly as many possibilities as electronic music. The sounds, the music, the feelings one could provoke from something that felt so...robotic.
+	   
+	   But I was stuck doing all this by myself. I was without a doubt not going to get any support from my high school music teacher, and my friends
+	   weren't interested in doing it with me either. I needed someone to
+      share my ideas with, but the question now was, who?</p>
+    </div>
+</section>
+
+<section id="Growing" class="Growing">
+    <div class="Headers">
+      <h2>Growing</h2>
+    </div>
+    <div class="Paragraphs">
+      <p>After talking to some of my friends about this problem, they told me to talk to a couple of upcoming rappers in
+      our school. However, I quickly found out that my style and structure did not suit the needs of hip hop. Once again, I was lost: Where would I get support?
+	  At this time, I also began facing pressures from my parents. They believed there would be no future in music, and even less in electronic music. I argued 
+	  relentlessly with them, and even more so as I felt increasingly pressured from homework and my part-time job at the local grocery store. </p>
+	  <p> That was when I met who was to be my life-long inspiration: Joselyn Sputak. Joselyn was a classmate of mine, but I had never noticed her until I joined the music club 
+	  at our school. As it turned out, she was interested in electronic music as well and had played with it for quite a few years. She mentored me and encouraged me to not give up my hobby. 
+	  Through her help, I greatly improved and started to
+      publicize some of my work.</p>
+    </div>
+</section>
+<section id="Fame" class="Fame">
+    <div class="Headers">
+      <h2>Rising to Fame</h2>
+    </div>
+    <div class="Paragraphs">
+      <p>After putting out a couple of songs and getting fairly positive feedback from them, I decided tht I would not
+      have to go to college and could branch out and gain more income without it. In September 2016, I released my most
+      popular album, "Hometown", and it blew up.</p>
+    </div>
+    <img src="GrowingPic.jpg"> 	
+</section>
+<section id="Present" class="Present">
+    <div class="Headers">
+      <h2>Present Day</h2>
+    </div>
+    <div class="Paragraphs">
+      <p>Now, I live in Los Angeles, California and enjoy the many fan letters I get every day. My music has gained a lot
+      of attraction in LA, so I can't even step out for a quick walk without getting recognized! I've partnered with many other famous artists across various different genres,
+	  whether that be pop, hip hop, country, etc. </p><p>But even better than all the newfound fame, I am now married to the love of my life: Joselyn Sputak. I could never thank her enough for all 
+	  the motivation and love she has showered on me the last couple of years. Joselyn, you have been my lifelong inspiration, my hope, and my one true love. Thank you so much. </p><p>I would also like to thank my high school music teacher, Mr. Enslein, for giving 
+      me my ambition to prove him wrong. Mr. Enslein, if you are reading this, screw you. I proved you wrong. You told me I would never become a successful musician, but electronic music <i>is</i> real, and it is, in my opinion, perhaps
+	  one of the best forms of music there is. </p><p>Finally, I would like to give to give a shout out to my parents. Mom and dad, thanks for working so hard for my future,
+	  for loving me unconditionally no matter how I treated you guys, for finding me when I lost sight of myself and who I truly am, and lastly, though we often fought over my choice to follow my dream of 
+	  creating music, thanks for always trying to lead me towards what you guys thought would be best. </p>
+	  <p>Alright, that's all I gotta
+      say about myself. Click one of the links at the top to go to another page about my music.</p>
+    </div>
+</section>
+</section>
+</article>
+<body>
+<footer class="footer">
+  <p>Copyright &copy; 2018 JR II</p>
+  <img src="JuniorLogo.png"/>
+  <p>Created by the Juanita High School TSA Chapter<br>Want to Learn More? Visit: esthermliu.github.io/JHSWebsite</p>
+</footer>
+<footer class="footer2">
+  <img src="JuniorLogo.png"/>
+  <p>Copyright &copy; 2018 JR II</p>
+  <p class="FooterBottom">Created by the Juanita High School TSA Chapter<br>Want to Learn More? Visit: esthermliu.github.io/JHSWebsite</p>
+</footer>
+</html>

@@ -1,0 +1,101 @@
+.MusicFrontPage {
+  background-color: white;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 5vh;
+}
+
+.active {
+  color: #dbb52f;
+}
+
+.MusicContainer {
+  margin: 0 15%;
+}
+
+.TopBar {
+  display: flex;
+}
+
+.TopBar2 {
+  display: flex;
+  width: 100%;
+  margin-top: 5vh;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.HomeLink {
+  color: black;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+
+.HomeLink:hover {
+  color: #dbb52f;
+}
+
+h4 {
+  font-family: "Courier new", sans-serif;
+}
+
+.TopBar2 h4 {
+  padding-left: 10px;
+}
+
+.TitleBar h2 {
+  padding-bottom: 3%;
+  border-bottom: 1px solid black;
+  padding-left: 10px;
+  color: black;
+  text-transform: uppercase;
+}
+
+.SongContainer {
+  min-height: 60%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Box2 {
+  width: 23%;
+  margin: 1%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Box2 img {
+  height: 85%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.Box2 p {
+  color: #952a1a;
+  margin: 0;
+}
+
+.Box2 h3 {
+  margin: 0;
+  margin-top: 10px;
+  font-family: "Courier new", sans-serif;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  color: black;
+}
+ 
+ .footer2 {
+   display: none;
+ }
+ 
+ .Box2 img{
+  height: 100%;
+  width: 100%;
+}
+
+.ImageLink {
+  height: 85%;
+  width: 100%;
+}

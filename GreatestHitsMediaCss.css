@@ -1,0 +1,45 @@
+@media screen and (max-width: 414px) {
+.AboutHeader {
+  display: none !important;
+}
+
+.MusicBody {
+  top: 80px !important;
+}
+
+.ProductInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.MusicContainer {
+  margin: 3vh !important;
+}
+
+.ProductHolder {
+  width: 100% !important;
+}
+
+.ActualProductInfo {
+  width: 100% !important;
+  margin-top: 5vh !important;
+}
+
+.DetailBox {
+  width: 100%;
+  height: 4.5vh !important;
+}
+
+.DetailSmallBox {
+  width: 100% !important;
+  height: 4.5vh;
+  display: flex;
+  justify-content: flex-start !important;
+}
+
+.DetailSmallBox h3 {
+  margin-left: 1vh !important;
+}
+
+
+}

@@ -1,0 +1,170 @@
+@media screen and (max-width: 414px) {
+/* start of phone styles (iPhone 6/7)*/
+.logo-box {
+  width: 50% !important;
+}
+
+.second-box {
+  display: none !important;
+}
+
+header {
+  display: none;
+}
+
+.logo-box img {
+  height: 100%;
+  width: 100%;
+  margin-left: 20%;
+}
+
+.second-box ul {
+  display: none !important;
+}
+
+.second-box ul li {
+  display: none !important;
+}
+
+.second-box li a {
+  display: none !important;
+}
+
+.second-box li button {
+  display: none !important;
+}
+
+.DropDownContent {
+  display: none;
+}
+
+.DropDownContent a {
+  display: none !important;
+}
+
+
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 0;
+  position: fixed;
+  display: flex;
+  height: 48px;
+  justify-content: flex-start;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+  display: block !important;
+}
+
+.active {
+  color: #dbb52f !important;
+}
+
+.Hamburger {
+  position: fixed;
+  z-index: 3;
+  color: white;
+  height: 80px;
+  margin-left: 80%;
+}
+
+.overlay-content {
+  position: relative;
+  top: 15%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  z-index: 11;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .CloseButton {
+  position: absolute;
+  top: 80px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .CloseButton {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+.MusicDropDown {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 38%;
+}
+
+.MusicDropDown a {
+  font-size: 15px;
+  padding-left: 20px;
+}
+
+.footer2 {
+  display: flex !important;
+  flex-direction: column;
+}
+
+.footer {
+  display: none;
+}
+
+.footer2 img {
+  height: 100%;
+  margin-top: 3vh;
+}
+
+.footer2 p {
+  font-size: 2vh;
+  text-align: center;
+  color: #ababab;
+}
+
+.FooterBottom {
+  margin-top: 0;
+}
+
+.footer {
+  display: none;
+}
+
+a:link {
+  text-decoration: none;
+  font-family: "Roboto Condensed",sans-serif;
+}
+
+
+
+}
