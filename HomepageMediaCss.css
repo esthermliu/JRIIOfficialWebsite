@@ -42,6 +42,18 @@ header {
   display: none !important;
 }
 
+.MySlides img{
+  height:30vh;
+  width: 100vw;
+  max-width:100%;
+}
+
+.MySlides {
+  width: 100vw;
+  max-width: 100%;
+  overflow: hidden;
+}
+
 
 
 .container {
@@ -110,14 +122,6 @@ header {
   font-size: 60px;
 }
 
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .CloseButton {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
-  }
-}
 
 .MusicDropDown {
   display: flex;
@@ -164,7 +168,6 @@ header {
 .DotContainer {
   position: absolute;
   height: 28vh;
-  width: 100vw;
   max-width: 100%;
   display: flex;
   justify-content: center;
@@ -174,7 +177,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 22vh;
+  margin-top: 25vh;
   position: absolute;
   z-index: 2;
   float: right;
@@ -182,8 +185,8 @@ header {
 
 .dot {
   cursor: pointer;
-  height: 1.3vh;
-  width: 1.3vh;
+  height: 1.5vh;
+  width: 1.5vh;
   margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;
@@ -305,13 +308,15 @@ header {
 .NewInfo {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  align-items: center;
 }
 
 
 .News1, .News2, .News3 {
   display: flex;
   flex-direction: column;
-  width: 95vw;
+  width: 90vw;
   margin: 0;
   left: 0;
   height: auto;
@@ -321,7 +326,7 @@ header {
 
 .News1 img, .News2 img, .News3 img {
   width: 100% !important;
-  max-width: 90vw;
+  max-width: 85vw;
   object-fit: cover;
 }
 
@@ -329,7 +334,7 @@ header {
 .News {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   width: 95vw;
   margin-right: 1vh;
   margin-left: 1vh;
@@ -352,18 +357,31 @@ header {
   margin-right: 1vh;
   width: 95vw;
   margin-bottom: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.FanClubTitle {
+  margin: 0;
+  width: 95vw;
 }
 
 .UltimateContainer {
-  width: 95vw;
+  width: 90vw;
 }
 
 
 .AllPosts button {
   width: 100%;
-  padding-left: 20vw;
-  padding-right: 20vw;
+  margin: 0;
   margin-top: 3vh;
+}
+
+.AllPosts {
+  margin: 0 !important;
+  width: 75vw;
 }
 
 
@@ -482,4 +500,18 @@ header {
   background-attachment: scroll !important;
 }
 
+.Music p {
+  text-align: center;
+}
+
+
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .CloseButton {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
 }
