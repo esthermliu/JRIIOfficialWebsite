@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="FansDBCss.css">
+	<link rel="stylesheet" media="screen and (max-width: 414px)" href="MediaCss.css">
 	<link rel="stylesheet" href="StyleSheetDB.css">
 	<link rel="shortcut icon" type="image/png" href="ActualFavicon.png"/>
 	<link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet"> 
@@ -48,6 +50,33 @@ var myDropdown = document.getElementById("MyDropdown");
   }
 }
 </script>
+<span class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+<div id="myNav" class="overlay">
+   <span class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  <a href="javascript:void(0)" class="CloseButton" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="HomePageDB.html">Home</a>
+    <a href="TourDB.html">Tour</a>
+	<a href="NewsDB.html">News</a>
+    <a href="#">Music</a>
+	 <div class="MusicDropDown">
+	    <a href="MusicAlbum1.html">JR II's Greatest Hits</a>
+		<a href="MusicAlbum2.html">Hometown</a>
+		<a href="MusicAlbum3.html">Purpose</a>
+	 </div>
+    <a class="active" href="FansDB.html">Fans</a>
+	<a href="AboutPageDB.html">About</a>
+	<a href="StoreDB.html">Store</a>
+  </div>
+  <script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
 </header>
 <body>
 <div class="FanClubBackground">
@@ -69,5 +98,10 @@ var myDropdown = document.getElementById("MyDropdown");
   <p>Copyright &copy; 2018 JR II</p>
   <img src="JuniorLogo.png"/>
   <p>Created by the Juanita High School TSA Chapter<br>Want to Learn More? Visit: esthermliu.github.io/JHSWebsite</p>
+</footer>
+<footer class="footer2">
+  <img src="JuniorLogo.png"/>
+  <p>Copyright &copy; 2018 JR II</p>
+  <p class="FooterBottom">Created by the Juanita High School TSA Chapter<br>Want to Learn More? Visit: esthermliu.github.io/JHSWebsite</p>
 </footer>
 </html>
