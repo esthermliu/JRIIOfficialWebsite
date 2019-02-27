@@ -75,7 +75,7 @@ header {
 
 .Hamburger {
   position: fixed;
-  z-index: 3;
+  z-index: 12;
   color: white;
   height: 80px;
   margin-left: 80%;
@@ -83,7 +83,7 @@ header {
 
 .overlay-content {
   position: relative;
-  top: 15%;
+  top: 25%;
   width: 100%;
   text-align: center;
   margin-top: 30px;
