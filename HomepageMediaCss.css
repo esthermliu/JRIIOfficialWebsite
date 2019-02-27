@@ -87,7 +87,7 @@ header {
 
 .Hamburger {
   position: fixed;
-  z-index: 3;
+  z-index: 10;
   color: white;
   height: 80px;
   margin-left: 80%;
@@ -95,7 +95,7 @@ header {
 
 .overlay-content {
   position: relative;
-  top: 15%;
+  top: 25%;
   width: 100%;
   text-align: center;
   margin-top: 30px;
@@ -362,6 +362,13 @@ header {
   align-items: center;
   justify-content: center;
 }
+
+.FanPic {
+  width: 85vw !important;
+  object-fit: cover;
+  padding-top: 0 !important;
+}
+
 
 .FanClubTitle {
   margin: 0;
