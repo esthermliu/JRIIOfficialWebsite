@@ -1,0 +1,518 @@
+@media only screen and (max-width: 770px) and (min-width: 415px) {
+
+.logo-box {
+  width: 30% !important;
+}
+
+.second-box {
+  display: none;
+}
+
+header {
+  display: none;
+}
+
+.logo-box img {
+  height: 100%;
+  width: 100%;
+  margin-left: 20%;
+}
+
+.second-box ul {
+  display: none;
+}
+
+.second-box ul li {
+  display: none !important;
+}
+
+.second-box li a {
+  display: none !important;
+}
+
+.second-box li button {
+  display: none !important;
+}
+
+.DropDownContent {
+  display: none;
+}
+
+.DropDownContent a {
+  display: none !important;
+}
+
+.MySlides img{
+  height:40vh;
+  width: 100vw;
+  max-width:100%;
+}
+
+.MySlides {
+  width: 100vw;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 0;
+  position: fixed;
+  display: flex;
+  height: 48px;
+  justify-content: flex-start;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+  display: block !important;
+}
+
+.active {
+  color: #dbb52f !important;
+}
+
+.Hamburger {
+  position: fixed;
+  z-index: 10;
+  color: white;
+  height: 60px;
+  margin-left: 80%;
+  margin-top: 1%;
+}
+
+.overlay-content {
+  position: relative;
+  top: 15%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  z-index: 11;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 50px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .CloseButton {
+  position: absolute;
+  top: 80px;
+  right: 45px;
+  font-size: 60px;
+}
+
+
+.MusicDropDown {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 38%;
+}
+
+.MusicDropDown a {
+  font-size: 15px;
+  padding-left: 50px;
+  font-size: 30px;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 2%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 14px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  height: 20px;
+  width: 20px;
+  user-select: none;
+}
+
+.next {
+  top:50%;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.DotContainer {
+  position: absolute;
+  height: 28vh;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.Dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35vh;
+  position: absolute;
+  z-index: 2;
+  float: right;
+}
+
+.dot {
+  cursor: pointer;
+  height: 1.5vh;
+  width: 1.5vh;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin: 10px;
+}
+
+.TourInfo {
+  margin-left: 10vw;
+}
+
+.TourBackground {
+  display: none;
+}
+
+.TourTitle2 {
+  font-size: 10vh;
+  padding-top: 3vh;
+  display: block !important;
+   text-shadow: 3px 3px 0px #c76037;
+  color:#dbb52f;
+  text-transform: uppercase;
+  padding-bottom: 3vh;
+}
+
+.TourBackground2 {
+  background-image: url("JuniorTourPic.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+}
+
+
+.TourLocation2 {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Date {
+  padding-right: 2%;
+}
+
+.Date h2 {
+  color: #dbb52f;
+  text-shadow: 3px 3px 0px #c76037;
+  width: 30vw;
+  margin-left: 5vw;
+}
+
+.LocationName {
+  width: 60vw;
+  margin-right: 5vw;
+}
+
+.LocationName h2 {
+  margin-bottom: 0;
+}
+
+.LocationName p {
+  margin-top: 0;
+  color: #c5cdd8;
+}
+
+.Tickets {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row !important;
+  width: auto !important;
+  height: 50px;
+  margin-bottom: 2vh;
+}
+
+.Tickets button {
+  height: 50px;
+}
+
+
+
+.TourInfo {
+  object-fit: cover;
+  width: 100vw;
+  max-width: 100%;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.AllTickets {
+  width: 100%;
+}
+
+.AllTickets button {
+  width: 100%;
+  margin: 0;
+  margin-top: 5vh;
+  padding-left: 30vw;
+  padding-right: 30vw;
+  background-color: #dbb52f;
+  color: black !important;
+  box-shadow: 5px 5px #c76037;
+}
+
+.NewTitle {
+  font-size: 8vh;
+  padding-bottom: 5vh;
+  padding-top: 8vh;
+  margin: 0;
+}
+
+.NewInfo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+
+.News1, .News2, .News3 {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  margin: 0;
+  left: 0;
+  height: auto;
+  margin-bottom: 3vh;
+}
+
+
+.News1 img, .News2 img, .News3 img {
+  width: 100% !important;
+  max-width: 85vw;
+  object-fit: cover;
+}
+
+
+.News {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 95vw;
+  margin-right: 1vh;
+  margin-left: 1vh;
+}
+
+.News1 h2, .News2 h2, .News3 h2 {
+  text-align: center;
+}
+
+
+.AllNews button {
+  width: 100%;
+  margin: 0;
+  padding-left: 30vw;
+  padding-right: 30vw;
+}
+
+.FanClub {
+  margin-left: 1vh;
+  margin-right: 1vh;
+  width: 95vw;
+  margin-bottom: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.FanPic {
+  width: 85vw !important;
+  object-fit: cover;
+  padding-top: 0 !important;
+}
+
+
+.FanClubTitle {
+  margin: 0;
+  width: 95vw;
+}
+
+.UltimateContainer {
+  width: 90vw;
+}
+
+
+.AllPosts button {
+  width: 100%;
+  margin: 0;
+  margin-top: 3vh;
+}
+
+.AllPosts {
+  margin: 0 !important;
+  width: 75vw;
+}
+
+
+.JoinInfo h1 {
+ font-size: 8vh;
+}
+
+.JoinInfo h2 {
+  font-size: 3vh;
+}
+
+.JoinInfo p {
+  font-size: 2vh;
+  line-height: 1.5em;
+}
+
+.Music {
+  margin-left: 4vw;
+  margin-right: 4vw;
+}
+
+.AudioContainer {
+  width: 100%;
+}
+
+.AudioContainer img {
+  object-fit: cover;
+  width: 25%;
+}
+
+.Audio {
+  width: 75%;
+}
+
+.Audio audio {
+  width: 100%;
+}
+
+.AllSongs {
+  width: 100%;
+}
+
+.AllMusic button {
+  width: 100%;
+  margin: 0;
+  padding-left: 30vw;
+  padding-right: 30vw;
+  margin-top: 0;
+}
+
+.JuniorSocial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.JuniorSocialInfo {
+  width: 100%;
+  margin: 0;
+  border-right: 0px solid rgba(255,255,255,0) !important;
+  padding: 0;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.JuniorSocialWord h3 {
+  font-size: 5vh;
+}
+
+.JoinEmail {
+  max-width: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.EmailHolder {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.EmailForm {
+  display: flex;
+  padding-left:  10%;
+  margin-bottom: 5vh;
+}
+
+.footer2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  display: none;
+}
+
+.footer2 img {
+  height: 100%;
+  margin-top: 3vh;
+}
+
+.footer2 p {
+  font-size: 2vh;
+  text-align: center;
+  color: #ababab;
+}
+
+.FooterBottom {
+  margin-top: 0;
+}
+
+.PinkBackground {
+  background-attachment: scroll !important;
+}
+
+.Music p {
+  text-align: center;
+}
+
+
+}

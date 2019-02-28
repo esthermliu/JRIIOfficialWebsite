@@ -1,0 +1,72 @@
+@media screen and (max-width: 770px) and (min-width: 415px) {
+.NewsInfo h1 {
+    font-size: 8vh;
+	padding: 0;
+}
+
+.NewsInfo {
+  margin: 0;
+  margin-left: 1%;
+  margin-right: 1%;
+} 
+
+
+.NewsInfo1 h3, .NewsInfo2 h3, .NewsInfo3 h3 {
+  font-size: 30px;
+}
+
+.NewsInfo1 p, .NewsInfo2 p, .NewsInfo3 p {
+  font-size: 30px;
+}
+
+.NewsBox1, .ActualBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.NewsBox1 img, .HiddenNewsBox1 img{
+  width: 95%;
+  margin-top: 5%;
+}
+
+.footer2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  display: none;
+}
+
+.footer2 img {
+  height: 100%;
+  margin-top: 3vh;
+}
+
+.footer2 p {
+  font-size: 2vh;
+  text-align: center;
+  color: #ababab;
+}
+
+.FooterBottom {
+  margin-top: 0;
+}
+
+.footer {
+  display: none;
+}
+
+a:link {
+  text-decoration: none;
+  font-family: "Roboto Condensed",sans-serif;
+}
+
+
+.AllButton button {
+  height: 2%;
+  font-size: 30px;
+}
+
+
+}
