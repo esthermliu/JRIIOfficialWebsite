@@ -91,6 +91,7 @@ header {
   color: white;
   height: 80px;
   margin-left: 80%;
+  display: block !important;
 }
 
 .overlay-content {
@@ -493,6 +494,7 @@ header {
   height: 100%;
   margin-top: 3vh;
 }
+
 
 .footer2 p {
   font-size: 2vh;

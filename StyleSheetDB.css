@@ -200,7 +200,7 @@ footer {
 }
 
 .footer p {
-  margin: 0px;
+  margin: 20px;
   padding: 0px;
   height: 70px;
   width: 50%;
@@ -212,9 +212,13 @@ footer {
   font-size: 14px;
 }
 
+.footer a {
+  color: white;
+}
+
 .footer img {
   height: 100%;
-  margin: 0;
+  margin: 0 10%;
 }
 
 
@@ -223,3 +227,6 @@ footer {
   display: none;
 }
 
+.Hamburger {
+  display: none;
+}

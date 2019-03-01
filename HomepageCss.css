@@ -795,7 +795,9 @@ footer {
   height: 100%;
 }
 
-
+.footer a {
+  font-family: "Courier new", sans-serif !important;
+}
 
 
 
