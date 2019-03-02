@@ -54,18 +54,21 @@ header {
   overflow: hidden;
 }
 
-
+.imgcontainer {
+  width: 100%;
+}
 
 .container {
   display: inline-block;
   cursor: pointer;
-  width: 100%;
-  margin-bottom: 0;
+  width: 72%;
+  margin-bottom: auto !important;
   position: fixed;
   display: flex;
-  height: 48px;
+  height: auto !important;
   justify-content: flex-start;
 }
+
 
 .overlay {
   height: 100%;
