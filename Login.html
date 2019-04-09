@@ -9,43 +9,51 @@
     <title>Login</title>
 </head>
 <body>
-<!-- Facebook INIT -->
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId            : '641049609677346',
-      autoLogAppEvents : true,
-      xfbml            : true,
-      version          : 'v3.2'
-    });
-  };
+<div class="BigBox">
+  <div class="ActualContainer">
+    <div class="Title">
+	  <h1>JR II Official Website</h1>
+	</div>
+     <div class="LoginContainer">
+		<!-- Facebook INIT -->
+		<script>
+		  window.fbAsyncInit = function() {
+			FB.init({
+			  appId            : '641049609677346',
+			  autoLogAppEvents : true,
+			  xfbml            : true,
+			  version          : 'v3.2'
+			});
+		  };
 
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "https://connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
-<p><b>Please log in to proceed with your transaction request.</b></p>
-<br>
-<form>
-  <div class="container">
-    <!-- Facebook Button -->
-    <div class="fb-login-button" data-size="medium" data-button-type="login_with" data-auto-logout-link="true" data-use-continue-as="true"></div>
-    <!-- Twitter Button -->
-    <a href="#" class="twitter btn">
-      <i class="fa fa-twitter fa-fw"></i> Login with Twitter
-    </a>
-    <!-- Google Button -->
-    <div class="g-signin2" data-onsuccess="signIn(googleUser)" data-theme="dark"></div>
+		  (function(d, s, id){
+			 var js, fjs = d.getElementsByTagName(s)[0];
+			 if (d.getElementById(id)) {return;}
+			 js = d.createElement(s); js.id = id;
+			 js.src = "https://connect.facebook.net/en_US/sdk.js";
+			 fjs.parentNode.insertBefore(js, fjs);
+		   }(document, 'script', 'facebook-jssdk'));
+		</script>
+		<p><b>Please log in to proceed with your transaction request.</b></p>
+		<form>
+		 <h2>Log In To Your Account</h2>
+		  <div class="container">
+			<!-- Facebook Button -->
+			<div class="fb-login-button" data-size="medium" data-button-type="login_with" data-auto-logout-link="true" data-use-continue-as="true"></div>
+			<!-- Twitter Button -->
+			<a href="#" class="twitter btn">
+			  <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+			</a>
+			<!-- Google Button -->
+			<div class="g-signin2" data-onsuccess="signIn(googleUser)" data-theme="dark"></div>
+		  </div>
+		  <div class="container">
+			<button type="button" class="goBack"><a href="https://esthermliu.github.io/JRIIOfficialWebsite">Back</a></button>
+			<button type="button" class="payment" id="checkout"><a href="StoreDB.html">Continue to Checkout</a></button>
+		  </div>
+		</form>
+    </div>
   </div>
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="goBack"><a href="https://esthermliu.github.io/JRIIOfficialWebsite">Back</a></button>
-    <button type="button" class="payment" id="checkout"><a href="StoreDB.html">Continue to Checkout</a></button>
-  </div>
-</form>
-<br>
+</div>
 </body>
 </html>
