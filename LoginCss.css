@@ -1,0 +1,106 @@
+p {
+  color: red;
+  font-family: "Courier New", serif;
+}
+form {
+  border: 3px solid #f1f1f1;
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-family: "Courier New", serif;
+}
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-family: "Courier New", serif;
+}
+button:hover {
+  opacity: 0.8;
+}
+.goBack {
+  width: auto;
+  padding: 10px 18px;
+  background-color: black;
+  font-family: "Courier New", serif;
+  float: left;
+}
+.container {
+  padding: 16px;
+}
+.payment {
+  width: auto;
+  padding: 10px 18px;
+  background-color: black;
+  font-family: "Courier New", serif;
+  float: right;
+}
+b {
+  font-family: "Courier New", serif;
+}
+* {box-sizing: border-box}
+
+/* style the container */
+.container {
+  position: relative;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px 0 30px 0;
+}
+
+input,
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+input:hover,
+.btn:hover {
+  opacity: 1;
+}
+
+.facebook {
+  background-color: #3B5998;
+  color: white;
+  font-family: "Archivo Medium", sans-serif;
+}
+
+.twitter {
+  background-color: #55ACEE;
+  color: white;
+  font-family: "Archivo Medium", sans-serif;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:visited{
+  color: white;
+}

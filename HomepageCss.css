@@ -1,3 +1,13 @@
+body {
+  opacity: 1;
+  transition: 0.8s opacity;
+}
+
+body.fade {
+  opacity: 0;
+  transition: none;
+}
+
 .SlideShowContainer {
   position: relative;
   margin: auto;
@@ -650,7 +660,7 @@
 
 .JuniorSocial {
   width: 100%;
-  background-image:url("Starbackground.jpg"); 
+  background-image:url("StarBackground.jpg"); 
   margin: 0;  
   display: flex;
   height: 100%;
