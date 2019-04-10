@@ -212,6 +212,9 @@ a:visited{
 
 .abcRioButtonIcon {
   height: 95% !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .abcRioButton {

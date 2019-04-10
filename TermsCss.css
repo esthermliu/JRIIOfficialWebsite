@@ -1,8 +1,24 @@
-body {
+.Title {
   margin: 0 20%;
 }
 
+.Title {
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 3%;
+  margin-bottom: 1%;
+}
 
 .MainContainer {
-  background-color: red;
+  padding-top: 2%;
+  border-top: 1px solid #DCDCDC;
+  font-family:"Roboto","Helvetica","Arial",sans-serif;
+  color: #333;
+  line-height: 1.5em;
+  margin: 0 25%;
+}
+
+a {
+  color: blue;
 }
