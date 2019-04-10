@@ -211,7 +211,8 @@ a:visited{
 }
 
 .abcRioButtonIcon {
-  height: 95% !important;
+  margin-top: 5% !important;
+  margin-bottom: 5% !important;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -226,8 +227,6 @@ a:visited{
 }
 
 ._51mx {
-  margin-top: 5% !important;
-  margin-bottom: 5% !important;
   padding-top: 12px !important;
   padding-bottom: 12px !important;
   width: 100% !important;
