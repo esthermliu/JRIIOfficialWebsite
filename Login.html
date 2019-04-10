@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="LoginCss.css">
     <meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <meta name="google-signin-scope" content="profile email">
     <meta name="google-signin-client_id" content="570030489613-c652htelbqe71hja1brq2hd9hsie809c.apps.googleusercontent.com">
     <script src="https://apis.google.com/js/platform.js?onload=onLoadCallback" async defer></script>
@@ -12,7 +13,7 @@
 <div class="BigBox">
   <div class="ActualContainer">
     <div class="Title">
-	  <h1>JR II Official Website</h1>
+	  <h1>JR II Official</h1>
 	</div>
      <div class="LoginContainer">
 		<!-- Facebook INIT -->
@@ -34,7 +35,6 @@
 			 fjs.parentNode.insertBefore(js, fjs);
 		   }(document, 'script', 'facebook-jssdk'));
 		</script>
-		<p><b>Please log in to proceed with your transaction request.</b></p>
 		<form>
 		 <h2>Log In To Your Account</h2>
 		  <div class="container">
@@ -47,12 +47,25 @@
 			<!-- Google Button -->
 			<div class="g-signin2" data-onsuccess="signIn(googleUser)" data-theme="dark"></div>
 		  </div>
-		  <div class="container">
+		  <div class="container2">
 			<button type="button" class="goBack"><a href="https://esthermliu.github.io/JRIIOfficialWebsite">Back</a></button>
 			<button type="button" class="payment" id="checkout"><a href="StoreDB.html">Continue to Checkout</a></button>
 		  </div>
 		</form>
     </div>
+	<ul class="FooterLinks">
+	  <li>
+	    <a class="Link" href="#">Terms of Use</a>
+		&middot;
+	  </li>
+	  	  <li>
+	    <a class="Link" href="#">Help</a>
+		&middot;
+	  </li>
+	  	  <li>
+	    <a class="Link" href="#">Private Policy</a>
+	  </li>
+	</ul>
   </div>
 </div>
 </body>
