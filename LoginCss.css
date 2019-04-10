@@ -242,13 +242,13 @@ tbody {
   height: 50px !important;
 }
 
-._5h0f, ._5h0o {
+._5h0f {
   font-size: 17px !important;
   font-family: Roboto,arial,sans-serif !important;
 }
 
-._5h0i {
-  height: 50px !important;
+._xvm, ._5h0c, ._5h0f, ._5h0i {
+  width: 100% !important;
+  max-width: 100% !important;}
 }
-
 
