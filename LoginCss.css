@@ -228,12 +228,12 @@ a:visited{
 
 .abcRioButtonContents {
   font-size: 17px !important;
+  padding-left: 20%;
 }
 
 .abcRioButtonContentWrapper {
   display: flex !important;
   align-items: center !important;
-  justify-content: space-between !important;
 }
 
 ._51mx {
