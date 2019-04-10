@@ -103,6 +103,8 @@ button:hover {
   flex-direction: column;
   background-color: white;
   width: 80%;
+  justify-content: center;
+  align-items: center;
 }
 
 .payment {
@@ -182,7 +184,7 @@ a:visited{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 350px;
+  width: 100%;
 }
 
 .FooterLinks {
@@ -191,12 +193,14 @@ a:visited{
   font-size: 14px;
   margin-top: 10%;
   text-align: center;
+  padding: 0;
 }
 
 .FooterLinks li {
   display: inline-block;
   color: white;
 } 
+
 
 .Link:hover {
   text-decoration: underline;
@@ -208,7 +212,8 @@ a:visited{
 
 .abcRioButtonBlue {
   height: 30px !important;
-  width: 350px !important;
+  width: 80% !important;
+  padding: 12px !important;
 }
 
 tr {
