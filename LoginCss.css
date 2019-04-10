@@ -101,7 +101,7 @@ button:hover {
 .container {
   display: flex;
   flex-direction: column;
-  background-color: blue;
+  background-color: white;
   width: 80%;
   justify-content: center;
   align-items: center;
@@ -133,16 +133,10 @@ input,
   border: none;
   border-radius: 4px;
   margin: 5px 0;
-  opacity: 0.85;
   display: inline-block;
   font-size: 17px;
   line-height: 20px;
   text-decoration: none;
-}
-
-input:hover,
-.btn:hover {
-  opacity: 1;
 }
 
 .facebook {
@@ -218,7 +212,6 @@ a:visited{
 
 .abcRioButtonIcon {
   height: 95% !important;
-  margin: 5px !important;
 }
 
 .abcRioButton {
