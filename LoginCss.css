@@ -204,3 +204,8 @@ a:visited{
 .container2 {
   padding-bottom: 10%;
 }
+
+.abcRioButtonBlue {
+  height: 30px !important;
+  width: auto !important;
+}
