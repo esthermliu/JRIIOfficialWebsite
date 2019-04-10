@@ -154,7 +154,7 @@ input:hover,
 .twitter {
   background-color: #55ACEE;
   color: white;
-  font-family: "Archivo Medium", sans-serif;
+  font-family: Roboto,arial,sans-serif;
   width: auto;
 }
 
@@ -216,6 +216,11 @@ a:visited{
   padding-bottom: 12px !important;
 }
 
+.abcRioButtonIcon {
+  height: 95% !important;
+  margin: 5px !important;
+}
+
 .abcRioButton {
   overflow: visible !important;
 }
@@ -228,5 +233,6 @@ a:visited{
   height: 50px !important;
   padding-top: 12px !important;
   padding-bottom: 12px !important;
+  width: 100% !important;
 }
 
