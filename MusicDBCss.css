@@ -102,7 +102,13 @@
   text-transform: uppercase;
 }
 
-
+.SpotifyButton button{
+  transform: scale(2, 2);
+}
+.ItunesButton button {
+  transform: scale(2, 2);
+  margin: 50px;
+}
 
 .footer2 {
   display: none;
