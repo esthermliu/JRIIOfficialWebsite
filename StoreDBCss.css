@@ -148,6 +148,10 @@ body {
   height: 10%;
 }
 
+.WordHolder2 h2 {
+  padding-top: 3% !important;
+}
+
 .Featured {
   background-color: white;
   padding-top: 3vh;
